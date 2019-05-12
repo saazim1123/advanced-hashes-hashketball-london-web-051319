@@ -146,6 +146,22 @@ def num_points_scored(name) # knows the number of points scored by each player
   
 end
 
+def shoe_size(name) #knows the shoe size of each player
+# Coding is identical to num_points_scored, only information you extract here is from the :shoe key
+
+  shoes = 0
+  
+  game_hash.each do |team, team_stats|
+    team_stats[:players].each do |stats|
+      if stats[:name] == name
+        shoes = stats[:shoe]
+      end
+    end
+  end
+ shoes
+end
+
+
 
 
 
