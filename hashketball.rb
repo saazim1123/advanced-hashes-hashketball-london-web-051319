@@ -155,6 +155,8 @@ def num_points_scored(name) # knows the number of points scored by each player
     end
   end
   points
+  
+end
 
 
 
