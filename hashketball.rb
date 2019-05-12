@@ -139,8 +139,9 @@ def num_points_scored(name)
         points = stats[:points]
       end
     end
+    points
   end
-  points
+  
 end
 
 
