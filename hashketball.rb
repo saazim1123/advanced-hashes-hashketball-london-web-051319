@@ -131,7 +131,11 @@ def game_hash
 end
 
 def num_points_scored(name)
+  points = 0 
   
+  game_hash.each do |team, team_stats|
+    
+  end
   
 end
 
