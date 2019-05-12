@@ -143,6 +143,19 @@ def num_points_scored(name)
   points
 end
 
+def num_points_scored(name) # knows the number of points scored by each player
+
+  points = 0 # This is the variable i want to return at the end of the code
+  
+  game_hash.each do |team, team_stats|
+    team_stats[:players].each do |stats|
+      if stats[:name] == name #The player name in the hash has to match the name argument
+        points = stats[:points]
+      end
+    end
+  end
+  points
+
 
 
 
